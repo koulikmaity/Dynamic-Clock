@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showclock
+        {
+            background-color: rgb(67, 236, 44);
+            font-size:100px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <button onclick="clearInterval(c)" >Click me</button><br><br>
+    <p id="showclock"></p>
+    <script text="type/javascript">
+    var c = setInterval(clocktiming,1000)
+    function clocktiming()
+    {
+        var a = new Date();
+    var b = a.toLocaleTimeString();
+   document.getElementById('showclock').innerHTML = b;
+    }
+</script>
+    
+</body>
+</html>
